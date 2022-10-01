@@ -68,3 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Something that I used to make the assignment more scalable as per react
+- I used tailwind to style companent or the UI
+- I used ag-grid for table rendering it is best when you are dealing with large data set
+- An Improvement can be made when the file is getting uploaded
+
