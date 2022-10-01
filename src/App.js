@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import CompanyTable from './components/CompanyTable';
+import UploadForm from './components/UploadForm';
 
-function App() {
+export default function App() {
+  const [viewType, setViewType] = useState('form');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='h-screen w-screen bg-slate-50 flex flex-center justify-center items-center content-center flex-col'>
+      {viewType === 'table' ? (
+        <CompanyTable setViewType={setViewType} viewType={viewType} />
+      ) : (
+        <UploadForm setViewType={setViewType} />
+      )}
     </div>
   );
 }
-
-export default App;
